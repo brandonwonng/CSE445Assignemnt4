@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ERROR #1: Wrong root element name (should be <Hotels>) -->
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="Hotels.xsd">
+
+  <!-- ERROR #2: A required attribute is missing on this Hotel -->
+  <Hotel>
+    <!-- ERROR #5: Two Name elements for one hotel -->
+    <Name>Westin</Name>
+    <Name>Duplicate Name</Name>
+
+    <!-- At least one Phone present here (OK) -->
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+
+    <Address>
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <!-- ERROR #3: A Phone element is missing for one of the hotels -->
+  <Hotel id="H002">
+    <Name>Marriott Downtown</Name>
+
+
+    <!-- ERROR #4: Address element has no closing tag -->
+    <Address>
+      <Number>100</Number>
+      <Street>Adams St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+     
+  </Hotel>
+
+</Hotel>
