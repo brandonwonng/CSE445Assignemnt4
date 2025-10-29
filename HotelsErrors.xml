@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ERROR 1: Root element should be <Hotels>, but is <Hotel> -->
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
+<!-- ERROR 1: Root element should be <Hotels>, but is <Hotel> -->
   <Hotel Rating="4.2">
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
