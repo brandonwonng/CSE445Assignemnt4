@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels>
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://brandonwonng.github.io/CSE445Assignemnt4/Hotels.xsd">
 
   <Hotel Rating="4.2">
     <Name>Westin</Name>
