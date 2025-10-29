@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="Hotels.xsd">
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://brandonwonng.github.io/CSE445Assignemnt4/Hotels.xsd">
 
 <!-- ERROR 1: Root element should be <Hotels>, but is <Hotel> -->
   <Hotel Rating="4.2">

@@ -169,7 +169,7 @@ namespace ConsoleApp1
                 }
                 catch (Exception ex)
                 {
-                    throw new InvalidDataException("Generated JSON could not be parsed by Newtonsoft as XML. Check key names and structure.", ex);
+                    throw new InvalidDataException("Generated JSON could not be parsed by Newtonsoft as XML.", ex);
                 }
 
                 return jsonText;
