@@ -15,7 +15,7 @@
     </Address>
   </Hotel>
 
-  <Hotel>
+  <Hotel Rating="4.0">
     <Name>Marriott Downtown Phoenix</Name>
     <Phone>602-333-3333</Phone>
     <Address>
@@ -40,7 +40,7 @@
     </Address>
   </Hotel>
 
-  <Hotel>
+  <Hotel Rating="4.1">
     <Name>Hilton Garden Inn Chandler</Name>
     <Phone>480-782-9500</Phone>
     <Address>
@@ -64,7 +64,7 @@
     </Address>
   </Hotel>
 
-  <Hotel>
+  <Hotel Rating="3.7">
     <Name>Residence Inn Flagstaff</Name>
     <Phone>928-440-5499</Phone>
     <Address>
@@ -88,7 +88,7 @@
     </Address>
   </Hotel>
 
-  <Hotel>
+  <Hotel Rating="3.6">
     <Name>Comfort Inn &amp; Suites Kingman</Name>
     <Phone>928-718-1717</Phone>
     <Address>
@@ -113,7 +113,7 @@
     </Address>
   </Hotel>
 
-  <Hotel>
+  <Hotel Rating="3.8">
     <Name>Courtyard by Marriott Mesa</Name>
     <Phone>480-644-1400</Phone>
     <Address>
@@ -122,6 +122,18 @@
       <City>Mesa</City>
       <State>AZ</State>
       <Zip>85210</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.3">
+    <Name>Embassy Suites by Hilton Phoenix</Name>
+    <Phone>602-252-1234</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>10</Number>
+      <Street>E Thomas Rd</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85012</Zip>
     </Address>
   </Hotel>
 
