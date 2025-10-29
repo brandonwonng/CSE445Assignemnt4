@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--ERROR 1: Root element should be <Hotels>, but is <Hotel> -->
+<!-- ERROR 1: Root element should be <Hotels>, but is <Hotel> -->
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
   <Hotel Rating="4.2">
     <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
     <Address NearestAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E.7th St</Street>
@@ -12,13 +14,12 @@
       <State>AZ</State>
       <Zip>85281</Zip>
     </Address>
-    <Phone>480-968-8885</Phone>
-    <Phone>800-937-8461</Phone>
   </Hotel>
 
-  <!--ERROR 2: Missing required attribute 'Rating' -->
+  <!-- ERROR 2: Missing required attribute 'Rating' -->
   <Hotel>
     <Name>Marriott Downtown Phoenix</Name>
+    <Phone>602-333-3333</Phone>
     <Address>
       <Number>100</Number>
       <Street>Adams St</Street>
@@ -26,13 +27,14 @@
       <State>AZ</State>
       <Zip>85004</Zip>
     </Address>
-    <Phone>602-333-3333</Phone>
   </Hotel>
 
-  <!--ERROR 5: Two Name elements -->
+  <!-- ERROR 5: Two Name elements -->
   <Hotel Rating="3.8">
     <Name>Hyatt Regency Scottsdale</Name>
     <Name>Hyatt Regency Scottsdale (Duplicate)</Name>
+    <Phone>480-444-1234</Phone>
+    <Phone>480-444-5678</Phone>
     <Address NearestAirport="Phoenix-Mesa Gateway">
       <Number>7500</Number>
       <Street>E Doubletree Ranch Rd</Street>
@@ -40,24 +42,24 @@
       <State>AZ</State>
       <Zip>85258</Zip>
     </Address>
-    <Phone>480-444-1234</Phone>
-    <Phone>480-444-5678</Phone>
   </Hotel>
 
-  <!--ERROR 4: Address element has no closing tag -->
+  <!-- ERROR 4: Address element has no closing tag -->
   <Hotel Rating="4.1">
     <Name>Hilton Garden Inn Chandler</Name>
+    <Phone>480-782-9500</Phone>
     <Address>
       <Number>7475</Number>
       <Street>W Chandler Blvd</Street>
       <City>Chandler</City>
       <State>AZ</State>
       <Zip>85226</Zip>
-    <Phone>480-782-9500</Phone>
+    <!-- missing </Address> on purpose -->
   </Hotel>
 
   <Hotel Rating="4.5">
     <Name>AC Hotel by Marriott Tucson</Name>
+    <Phone>520-385-2030</Phone>
     <Address NearestAirport="Tucson International">
       <Number>151</Number>
       <Street>E Broadway Blvd</Street>
@@ -65,11 +67,11 @@
       <State>AZ</State>
       <Zip>85701</Zip>
     </Address>
-    <Phone>520-385-2030</Phone>
   </Hotel>
 
   <Hotel Rating="3.7">
     <Name>Residence Inn Flagstaff</Name>
+    <Phone>928-440-5499</Phone>
     <Address>
       <Number>100</Number>
       <Street>N Humphreys St</Street>
@@ -77,11 +79,11 @@
       <State>AZ</State>
       <Zip>86001</Zip>
     </Address>
-    <Phone>928-440-5499</Phone>
   </Hotel>
 
   <Hotel Rating="3.9">
     <Name>Holiday Inn Express Yuma</Name>
+    <Phone>928-317-1400</Phone>
     <Address NearestAirport="Yuma International">
       <Number>2044</Number>
       <Street>S Avenue 3E</Street>
@@ -89,10 +91,9 @@
       <State>AZ</State>
       <Zip>85365</Zip>
     </Address>
-    <Phone>928-317-1400</Phone>
   </Hotel>
 
-  <!--ERROR 3: Missing Phone element entirely -->
+  <!-- ERROR 3: Missing Phone element entirely -->
   <Hotel Rating="3.6">
     <Name>Comfort Inn &amp; Suites Kingman</Name>
     <Address>
@@ -106,6 +107,8 @@
 
   <Hotel Rating="4.1">
     <Name>Best Western Sedona</Name>
+    <Phone>928-282-3072</Phone>
+    <Phone>800-528-1234</Phone>
     <Address NearestAirport="Flagstaff Pulliam">
       <Number>254</Number>
       <Street>Highway 89A</Street>
@@ -113,12 +116,11 @@
       <State>AZ</State>
       <Zip>86336</Zip>
     </Address>
-    <Phone>928-282-3072</Phone>
-    <Phone>800-528-1234</Phone>
   </Hotel>
 
   <Hotel Rating="3.8">
     <Name>Courtyard by Marriott Mesa</Name>
+    <Phone>480-644-1400</Phone>
     <Address>
       <Number>1221</Number>
       <Street>S Westwood</Street>
@@ -126,11 +128,11 @@
       <State>AZ</State>
       <Zip>85210</Zip>
     </Address>
-    <Phone>480-644-1400</Phone>
   </Hotel>
 
   <Hotel Rating="4.3">
     <Name>Embassy Suites by Hilton Phoenix</Name>
+    <Phone>602-252-1234</Phone>
     <Address NearestAirport="Sky Harbor">
       <Number>10</Number>
       <Street>E Thomas Rd</Street>
@@ -138,7 +140,6 @@
       <State>AZ</State>
       <Zip>85012</Zip>
     </Address>
-    <Phone>602-252-1234</Phone>
   </Hotel>
 
 </Hotel>
