@@ -9,6 +9,7 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Name" type="xs:string"/>
+              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded" minOccurs="1"/>
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
@@ -21,7 +22,6 @@
                   <xs:attribute name="NearestAirport" type="xs:string" use="optional"/>
                 </xs:complexType>
               </xs:element>
-              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded" minOccurs="1"/>
             </xs:sequence>
             <xs:attribute name="Rating" type="xs:decimal" use="required"/>
           </xs:complexType>
